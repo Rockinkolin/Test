@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+    
+{% block title %}Cars Base{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Autos</h1>
+    <p>
+      
+</div>  
+
+
+
+{% for i in data %}
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="" alt="Card image cap">
+    <div class="card-body">
+      <h1 class="card-title">{{i.Brand}}</h1>
+      <h5 class="card-title">{{i.Model}}</h5>
+      <h5 class="card-title">{{i.Color}}</h5>
+      <h2 class="card-title">{{i.Price}}</h2>
+      <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+  </div>
+
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
